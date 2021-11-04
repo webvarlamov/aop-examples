@@ -1,6 +1,6 @@
 package com.webvarlamov.aoptest.e8;
 
-import com.webvarlamov.aoptest.common.models.GrammyGitarist;
+import com.webvarlamov.aoptest.common.models.GrammyGuitarist;
 import com.webvarlamov.aoptest.common.models.Signer;
 import com.webvarlamov.aoptest.common.models.SimpleAdvice;
 import org.springframework.aop.Advisor;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class NameMatcherPointcutExample {
     public void start() {
-        GrammyGitarist grammyGitarist = new GrammyGitarist();
+        GrammyGuitarist grammyGitarist = new GrammyGuitarist();
         NameMatchMethodPointcut nameMatchMethodPointcut = new NameMatchMethodPointcut();
         nameMatchMethodPointcut.addMethodName("sign");
         nameMatchMethodPointcut.addMethodName("rest");
